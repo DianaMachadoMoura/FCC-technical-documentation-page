@@ -1,0 +1,136 @@
+/* Master Styles */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    color:rgb(56, 56, 56)
+}
+
+/* Navbar Styles */
+
+nav{
+    position: fixed;
+    width: 300px;
+    height:100%;
+    line-height: 2;
+    border-right: 5px solid rgb(63, 65, 64);
+}
+
+nav header{
+    font-size: 1.6em;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    padding-left:20px;
+    color: black;
+}
+
+nav li{
+    list-style-type: none;
+    border-top: 1px solid black;
+    padding:10px;
+}
+
+/* Main content */
+
+.container-wrapper{
+   margin-left:350px;
+   margin-bottom: 10px;
+   line-height: 1.6;
+}
+
+header {
+    font-size: 1.6em;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.text-wrapper li {
+    margin: 10px 0px 10px 35px;
+}
+
+ol li {
+    list-style-type:upper-roman;
+}
+
+.code-wrapper {
+    background-color: rgba(112, 112, 112, 0.1);
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius:5px;
+    display:block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.table-wrapper {
+    margin: 20px 0px;
+}
+
+table {
+    background-color: rgba(112, 112, 112, 0.1);
+}
+
+table, th, td {
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        position:relative;
+        width: 100%;
+        border:none;
+    }
+
+    nav header {
+        padding: 20px;
+    }
+
+    .navbar-list-wrapper {
+        height: 250px;
+        overflow-y: auto;
+        border-top: 3px solid rgb(63, 65, 64);
+        border-bottom: 3px solid rgb(63, 65, 64);
+    }
+
+    .container-wrapper {
+        margin: 20px;
+    }  
+}
+
+@media screen and (max-width: 400px) {
+   .table-wrapper {
+        width: 100%;
+        overflow-x:auto;
+    }
+}

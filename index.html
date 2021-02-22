@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <div class="container">
+
+        <nav id="navbar">
+            <header>JavaScript Basics</header>
+            <div class="navbar-list-wrapper">
+                <ul>
+                    <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                    <li><a href="#what_is_javascript" class="nav-link">What is JavaScript</a></li>
+                    <li><a href="#variables" class="nav-link">Variables</a></li>
+                    <li><a href="#comments" class="nav-link">Comments</a></li>
+                    <li><a href="#operators" class="nav-link">Operators</a></li>
+                    <li><a href="#conditionals" class="nav-link">Conditionals</a></li>
+                    <li><a href="#functions" class="nav-link">Functions</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#reference" class="nav-link">Reference</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-wrapper">
+            <main id="main-doc">
+                <div class="section-wrapper">
+                    <section class="main-section" id="introduction">
+                        <header>Introduction</header>
+                        <div class="text-wrapper">
+                            <p>JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc. This article helps you get started with JavaScript and furthers your understanding of what is possible.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="section-wrapper">
+                    <section class="main-section" id="what_is_javascript">
+                        <header>What is JavaScript</header>
+                        <div class="text-wrapper">
+                            <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It is versatile and beginner-friendly.</p>
+                            <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
+                            <ul>
+                                <li><span>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples;</span></li>
+                                <li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers;</li>
+                                <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="section-wrapper">
+                    <section class="main-section" id="variables">
+                        <header>Variables</header>
+                        <div class="text-wrapper">    
+                            <p>Variables are containers that store values. You start by declaring a variable with the var or the let keyword (more recommended), followed by the name you give to the variable:</p>
+                            <div class="code-wrapper"><code>let myVariable;</code></div>
+                            <p>Note: You can name a variable nearly anything, but there are some restrictions. JavaScript is case sensitive. This means myVariable is not the same as myvariable. If you have problems in your code, check the case!</p>
+                            <p>After declaring a variable, you can give it a value:</p>
+                            <div class="code-wrapper"><code>myVariable = 'Bob';</code></div>
+                            <p>Also, you can do both these operations on the same line:</p>
+                            <div class="code-wrapper"><code>let myVariable = 'Bob';</code></div>
+                            <p>You retrieve the value by calling the variable name:</p>
+                            <div class="code-wrapper"><code>myVariable;</code></div>
+                            <p>After assigning a value to a variable, you can change it later in the code:</p>
+                            <div class="code-wrapper"><code>let myVariable = 'Bob';<br>myVariable = 'Steve';</code></div>
+                            <p>Note that variables may hold values that have different data types:</p>
+                            
+                            <div class="table-wrapper">
+                                <table>
+                                    <tr>
+                                        <th>Variables</th>
+                                        <th>Explanation</th>
+                                        <th>Examples</th>
+                                    </tr>
+                                    <tr>
+                                        <th>String</th>
+                                        <td>This is a sequence of text known as a string. To signify that the value is a string, enclose it in single quote marks.</td>
+                                        <td><code>let myVariable = 'Bob';</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Number</th>
+                                        <td>This is a number. Numbers don't have quotes around them.</td>
+                                        <td><code>let myVariable = 10;</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Boolean</th>
+                                        <td>This is a True/False value. The words true and false are special keywords that don't need quote marks.</td>
+                                        <td><code>let myVariable = true;</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Array</th>
+                                        <td>This is a structure that allows you to store multiple values in a single reference.</td>
+                                        <td><code>let myVariable = [1,'Bob','Steve',10];</code>
+                                        <br>Refer to each member of the array like this:<br><code>myVariable[0], myVariable[1],</code>etc.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Object</th>
+                                        <td>This can be anything. Everything in JavaScript is an object and can be stored in a variable.</td>
+                                        <td><code>let myVariable = document.querySelector('h1');</code>
+                                        <br>All of the above examples too.</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <p>So why do we need variables? Variables are necessary to do anything interesting in programming. If values couldn't change, then you couldn't do anything dynamic, like personalize a greeting message or change an image displayed in an image gallery.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="section-wrapper">
+                    <section class="main-section" id="comments">
+                        <header>Comments</header>
+                        <div class="text-wrapper">
+                            <p>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments. You can write comments in JavaScript just as you can in CSS:</p>
+                            <div class="code-wrapper"><code>/*<br>Everything in between is a comment.<br>*/</code></div>
+                            <p>If your comment contains no line breaks, it's an option to put it behind two slashes like this:</p>
+                            <div class="code-wrapper"><code>// This is a comment</code></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="section-wrapper">
+                    <section class="main-section" id="operators">
+                        <header>Operators</header>
+                        <div class="text-wrapper">
+                            <p>An operator is a mathematical symbol that produces a result based on two values (or variables). In the following table, you can see some of the simplest operators.</p>
+
+                            <div class="table-wrapper">
+                                <table>
+                                    <tr>
+                                        <th>Operator</th>
+                                        <th>Explanation</th>
+                                        <th>Symbol(s)</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Addition</th>
+                                        <td>Add two numbers together or combine two strings.</td>
+                                        <td><code>+</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Subtraction, Multiplication, Division</th>
+                                        <td>These do what you'd expect them to do in basic math.</td>
+                                        <td><code>-, *, /</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Assignment</th>
+                                        <td>As you've seen already: this assigns a value to a variable.</td>
+                                        <td><code>=</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Equality</th>
+                                        <td>This performs a test to see if two values are equal. It returns a <code>true/false</code> (Boolean) result.</td>
+                                        <td><code>===</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Not, Does-not-equal</th>
+                                        <td>This returns the logically opposite value of what it precedes. It turns a <code>true</code> into a <code>false</code>, etc.. When it is used alongside the Equality operator, the negation operator tests whether two values are <em>not</em> equal.</td>
+                                        <td><code>!, !==</code></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+
+                <div class="section-wrapper">
+                    <section class="main-section" id="conditionals">
+                        <header>Conditionals</header>
+                        <div class="text-wrapper">
+                            <p>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the <code>if ... else</code> statement. For example:</p>
+                            <div class="code-wrapper"><code>let iceCream = 'chocolate';
+                                    if(iceCream === 'chocolate') {
+                                    alert('Yay, I love chocolate ice cream!');
+                                    } else {
+                                    alert('Awwww, but chocolate is my favorite...');
+                                    }</code>
+                            </div>
+                            <p>The expression inside the <code>if( ... )</code> is the test. This uses the identity operator to compare the variable <code>iceCream</code> with the string <code>chocolate</code> to see if the two are equal. If this comparison returns <code>true</code>, the first block of code runs. If the comparison is not true, the second block of code—after the else statement—runs instead.</p>
+                        </div>
+                    </section>    
+                </div>
+                    
+                <div class="section-wrapper">                        
+                    <section class="main-section" id="functions">
+                        <header>Functions</header>
+                        <div class="text-wrapper">
+                            <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions previously. For example:</p>
+                            <ol>
+                                <li>
+                                    <div class="code-wrapper"><code>let myVariable = document.querySelector('h1');</code></div>
+                                </li>
+                                <li>
+                                    <div class="code-wrapper"><code>alert('hello!');</code></div>
+                                </li>
+                            </ol>
+                            <p>These functions, <code>document.querySelector</code> and <code>alert</code>, are built into the browser.</p>
+                            <p>If you see something which looks like a variable name, but it's followed by parentheses— <code>()</code> —it is likely a function. Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.</p>
+                            <p>You can also define your own functions. In the next example, we create a simple function which takes two numbers as arguments and multiplies them:</p>
+                            <div class="code-wrapper"><code>function multiply(num1,num2) {
+                                let result = num1 * num2;
+                                return result;
+                                }</code>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="section-wrapper">
+                    <section class="main-section" id="events">
+                        <header>Events</header>
+                        <div class="text-wrapper">
+                            <p>Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response. The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse.There are many ways to attach an event handler to an element. Here we select the <code>&lt;html&gt;</code> element, setting its onclick handler property equal to an anonymous function, which contains the code we want the click event to run:</p>
+                            <div class="code-wrapper"><code>document.querySelector('html').onclick = function() {};</code>
+                            </div>
+                            <p>That is equivalent to the code below, but shorter</p>
+                            <div class="code-wrapper"><code>let myHTML = document.querySelector('html');<br>myHTML.onclick = function() {};</code></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="section-wrapper">
+                    <section class="main-section" id="reference">
+                        <header>Reference</header>
+                        <div class="text-wrapper">
+                            <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDN</a></p>
+                        </div>
+                    </section>                
+                </div>
+
+            </main>
+
+            <footer>
+                Diana Moura 2021
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
